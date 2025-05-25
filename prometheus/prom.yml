@@ -5,11 +5,10 @@ scrape_configs:
   - job_name: 'prometheus'
     static_configs:
       - targets: ['localhost:9090']
-
-  # - job_name: 'example_api'
-  #   scheme: http
-  #   static_configs:
-  #     - targets: ['example_api:9091']
+  - job_name: 'chatgpt-to-pdf'
+    scheme: http
+    static_configs:
+      - targets: ['chatgpt-to-pdf-nodejs:8080']
 
   #  ? TODO: add your services here
   # - job_name: 'your-job-name'
