@@ -6,3 +6,4 @@ scrape_configs:
     scheme: http
     static_configs:
       - targets: ['chatgpt-to-pdf-nodejs:8080']
+
